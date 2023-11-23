@@ -1,0 +1,4 @@
+bienvenido al registro de estudiantes
+cantiad de estudiantes a registrar 1
+lista de estudiantes registrados: 
+Nombre: aaron Edad: 25

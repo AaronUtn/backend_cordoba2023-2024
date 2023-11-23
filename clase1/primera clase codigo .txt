@@ -1,0 +1,50 @@
+let apellidoNombre = "Aaron Arias";
+console.log(apellidoNombre);
+let num = 5;
+console.log(num);
+let numDos = num++;
+console.log(numDos);
+console.log(num);
+
+if (num < 7) console.log("es menor a 7");
+else console.log('es mayor igual a 7');
+function sumador(par1,par2){
+    return par1 + par2;
+}
+const resultado = sumador(num,numDos);
+//console.log('el resultado de la funcion suma es ',resultado);
+//funcion arrow implicita como la de paradigma//
+sumador2 = (a,b) => {return a+b;}
+//objeto la var puede ser let o const
+const miAuto ={
+    marca: "Toyota",
+    modelo: `prius`,
+    color: 'gris'
+}
+
+console.log(miAuto.marca);
+console.log(miAuto["color"]);
+
+miAuto.marca = `audi`;
+miAuto['modelo'] = "a5";
+
+console.log(miAuto.marca);
+console.log(miAuto["modelo"]);
+
+let colores = ["verde","rojo","azul"];
+
+let color1 = colores[0];
+console.log(color1);
+//for para arreglos
+for(let i = 0; i < colores.length; i++) console.log(colores[i]);
+//for de objetos me muestra todas las propiedades
+for (let propiedad in miAuto ){
+    console.log(miAuto[propiedad]);
+}
+//for de objetos me muestra todas las propiedades
+//for (let color in colores ){
+//    console.log(colores[color]);
+//}devuelve la lista de colores
+//si ponemos solo console.log(colores) me da los indices del vector;
+
+

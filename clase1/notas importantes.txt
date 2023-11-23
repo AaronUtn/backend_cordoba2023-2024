@@ -1,0 +1,8 @@
+por alguna razon el objeto tuvo que ir dentro del for 
+for(){
+ let dato = prompt("... algo :")
+ let algo = {    
+ campo:dato,
+ campo: dato
+ }
+}
