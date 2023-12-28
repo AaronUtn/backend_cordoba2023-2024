@@ -46,5 +46,58 @@ for (let propiedad in miAuto ){
 //    console.log(colores[color]);
 //}devuelve la lista de colores
 //si ponemos solo console.log(colores) me da los indices del vector;
+//prompt tomo los datos ingresados por el usuario
+let numero = prompt("ingrese numero");
+-------------------------------------------------------
+--------------------------------------------------------
+--Ejercicio estudiantes---------------------------------
+const Estudiante = {
+    nombre: "generico",
+    edad: 18
+};
+
+const registrarEstudiante = () => {
+    console.log("ingresar un estudiante");
+    let cantidadEstudiantes = prompt("ingresar la cantidad de estudiantes a registrar");
+    
+    console.log("cantidad estu: " + cantidadEstudiantes);
+    let estudiantes = [];
+    for(let i=0;i<cantidadEstudiantes;i++){
+        let nombreEst = prompt("ingrese nombre del estudiante " + (i+1) + ":");
+        let edadEst = prompt("ingrese edad del estudiante " + (i+1) + ":");
+        Estudiante.nombre = nombreEst;
+        Estudiante.edad = edadEst;
+
+        estudiantes.push(Estudiante);
+        
+    }
+    
+    return estudiantes;
+};
+
+const mostrarEstudiantes = (estudiantes) => {
+    for (let i = 0; i < estudiantes.length; i++) {
+       
+        console.log("Nombre: " + estudiantes[i].nombre+"Edad: " + estudiantes[i].edad);
+    }
+};
 
 
+
+let vectorEst = registrarEstudiante();
+mostrarEstudiantes(vectorEst);
+------------------------------------------------------------
+-----------------------------------------------------------
+-----calcular promedio-------------------------------------
+promedio = (numeros) =>{
+    let suma = 0;
+    for(let i =0;i<numeros.length;i++){
+        suma = suma + numeros[i];
+    }
+    return suma/numeros.length;
+};
+
+
+let numeros=[1,2,3,4,5,6,7,8,9];
+let resultado = promedio(numeros);
+console.log("el promedio es: " + resultado);
